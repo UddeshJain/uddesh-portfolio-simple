@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background: rgb(163, 30, 30);
+    z-index: 10;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar a {
+    display: block;
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a:hover {
+    background: rgba(40, 145, 206, 0.575);
+}
+
+#navbar ul li a:visited {
+    background: rgb(163, 30, 30);
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    min-height: 90vh;
+    background-color:black;
+    background-image: linear-gradient(100deg,#201f20, #111422);
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#welcome-section h3 {
+    color: rgb(163, 30, 30);
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Welcome Section Starts here */
+
+#projects {
+    text-align: center;
+    min-height: 100vh;
+    background: #0f6975;
+    margin: 0;
+    padding: 100px;
+}
+
+#project-section-header {
+    color: white;
+    display: inline-block;
+    padding-top: 80px;
+    margin: 0;
+    border-bottom: 2px solid white;
+    font-size: 3rem;
+}
+
+#project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#project-grid-div {
+    background-color: black;
+    background-image: linear-gradient(100deg, rgb(163, 149, 20), rgb(143, 75, 101), rgb(184, 105, 69))
+}
+
+#project-grid a {
+    text-decoration: none;
+    height: 22rem;
+    width: 20rem;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+#project-grid img {
+    width: 80%;
+    padding-top: 20px;
+}
+
+#project-grid p {
+    background: #303841;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+#project-grid-div:hover .code {
+    color: #ff7f50;
+}
+#profile-link {
+    padding: 12px 30px;
+    color: white;
+    background: #303841;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: background 0.4s ease-in-out;
+}
+
+#profile-link:hover {
+    background: #b13605;
+}
+
+#profile-link i {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+#profile-link:hover > i {
+    transform: translateX(5px);
+}
+
+/* Contact Section Starts here */
+
+#contact {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    padding-top: 100px;
+    background: #303841;
+}
+
+#contact h1 {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+}
+
+#contact p {
+    color: rgb(219, 212, 212);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10%;
+}
+
+#contact-links > a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#contact-links > a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303841;
+    border-top: 5px solid rgb(163, 30, 30);
+    height: 13vh;
+    flex-direction: column;
+    z-index: 10;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar ul {
+        margin-right: 10px;
+    }
+    #navbar a {
+        font-size: 1em;
+        padding: 20px;
+    }
+    #welcome-section h1 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    #welcome-section h3 {
+        font-size: 1.3rem;
+        font-weight: 70;
+    }
+    #projects {
+        padding: 50px;
+    }
+    #project-section-header {
+        font-size: 1.2rem;
+        padding-top: 0px;
+        margin: 0;
+    }
+    #project-grid {
+        padding: 20px;
+    }
+    #project-grid a {
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    #contact h1 {
+        font-size: 1.8rem;
+    }
+    #contact p {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    #contact-links a {
+        font-size: 1.5rem;
+    }
+    footer p {
+        font-size: 1.3rem;
+    }
+    .code {
+        color: #ff7f50;
+    }
+}
