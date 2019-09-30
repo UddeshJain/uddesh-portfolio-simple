@@ -47,10 +47,6 @@ body {
     background: rgba(40, 145, 206, 0.575);
 }
 
-#navbar ul li a:visited {
-    background: rgb(163, 30, 30);
-}
-
 #welcome-section {
     display: flex;
     justify-content: center;
@@ -228,6 +224,9 @@ footer p {
     #navbar a {
         font-size: 1em;
         padding: 20px;
+    }
+    #navbar ul li a:visited {
+        background: rgb(163, 30, 30);
     }
     #welcome-section h1 {
         font-size: 2rem;
